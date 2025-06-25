@@ -2,6 +2,10 @@ import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import Star from "../../../../assets/images/Star.png";
+import Analysis from "../../../../assets/images/Analysis.png";
+import Fortknox from "../../../../assets/images/Fortknox.png";
+import Zenocide from "../../../../assets/images/Zenocide.png";
 
 // Blog post data for mapping
 const blogPosts = [
@@ -9,21 +13,21 @@ const blogPosts = [
     id: 1,
     date: "Nov 9, 2023",
     title: "How UX works in web",
-    image: "/image-21-2.png",
+    image: Analysis,
     tags: ["UI", "UX"],
   },
   {
     id: 2,
     date: "Aug 18, 2023",
     title: "Case study - Analysis Application.",
-    image: "/image-21-3.png",
+    image: Fortknox,
     tags: ["DESIGN", "PRINT"],
   },
   {
     id: 3,
     date: "Feb 16, 2023",
     title: "3 ways to develop your skill",
-    image: "/image-21-4.png",
+    image: Zenocide,
     tags: ["FIGMA", "WEB"],
   },
 ];
@@ -37,7 +41,7 @@ export const BlogSection = (): JSX.Element => {
             <img
               className="relative w-6 h-6 md:w-[30.43px] md:h-8"
               alt="Star"
-              src="/star.svg"
+              src={Star}
             />
             <h2 className="relative w-fit mt-[-1.00px] font-heading-h3-bold font-[number:var(--heading-h3-bold-font-weight)] text-white text-[24px] md:text-[32px] lg:text-[length:var(--heading-h3-bold-font-size)] tracking-[var(--heading-h3-bold-letter-spacing)] leading-[30px] md:leading-[40px] lg:leading-[var(--heading-h3-bold-line-height)] [font-style:var(--heading-h3-bold-font-style)]">
               Blog

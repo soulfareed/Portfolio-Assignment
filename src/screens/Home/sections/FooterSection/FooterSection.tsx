@@ -1,17 +1,26 @@
-import { ExternalLinkIcon } from "lucide-react";
+import { ExternalLinkIcon, Link } from "lucide-react";
 import React from "react";
+import Star from "../../../../assets/images/Star.png";
 
 export const FooterSection = (): JSX.Element => {
   // Data for the scrolling text banner
   const bannerItems = [
-    { text: "WEBFLOW", hasStarAfter: true, starSrc: "/star.svg" },
-    { text: "FIGMA", hasStarAfter: true, starSrc: "/star-2.svg" },
-    { text: "DESIGNER", hasStarAfter: true, starSrc: "/star.svg" },
-    { text: "DEVELOPER", hasStarAfter: false, starSrc: "" },
+    { text: "WEBFLOW", hasStarAfter: true, starSrc: Star },
+    { text: "FIGMA", hasStarAfter: true, starSrc: Star },
+    { text: "DESIGNER", hasStarAfter: true, starSrc: Star },
+    { text: "DEVELOPER", hasStarAfter: false, starSrc: Star },
   ];
 
   // Social media links
-  const socialLinks = ["Dribbble", "Behance", "Twitter", "Instagram"];
+  const socialLinks = [
+    { name: "Github", url: "https://github.com/soulfareed" },
+    {
+      name: "Linkedin",
+      url: "https://www.linkedin.com/in/fareed-zaman-952a3b222/",
+    },
+    { name: "Twitter", url: "https://twitter.com/" },
+    { name: "Instagram", url: "https://instagram.com/" },
+  ];
 
   return (
     <footer className="flex flex-col items-start px-4 md:px-6 lg:px-[100px] py-0 bg-dark w-full">
@@ -47,7 +56,7 @@ export const FooterSection = (): JSX.Element => {
 
               <div className="flex items-center justify-center gap-2">
                 <p className="font-body-lead font-[number:var(--body-lead-font-weight)] text-white text-[14px] md:text-[16px] lg:text-[length:var(--body-lead-font-size)] tracking-[var(--body-lead-letter-spacing)] leading-[20px] md:leading-[24px] lg:leading-[var(--body-lead-line-height)]">
-                  rehanurraihan@gmail.com
+                  fareedzaman501@gmail.com
                 </p>
                 <ExternalLinkIcon className="w-3 h-3 md:w-[16.04px] md:h-[16.04px] text-white" />
               </div>
@@ -57,7 +66,7 @@ export const FooterSection = (): JSX.Element => {
             <div className="flex flex-col md:flex-row w-full items-center md:items-end justify-between gap-4 md:gap-0">
               <div className="flex items-center gap-2">
                 <p className="font-body-syne font-[number:var(--body-syne-font-weight)] text-white text-[12px] md:text-[length:var(--body-syne-font-size)] tracking-[var(--body-syne-letter-spacing)] leading-[16px] md:leading-[var(--body-syne-line-height)] whitespace-nowrap">
-                  © Rehan Raihan - 2023
+                  © Md Fareed Zaman
                 </p>
               </div>
 
@@ -65,10 +74,11 @@ export const FooterSection = (): JSX.Element => {
                 {socialLinks.map((link, index) => (
                   <a
                     key={`social-link-${index}`}
-                    href="#"
+                    href={link.url}
+                    target="_blank"
                     className="font-body-syne font-[number:var(--body-syne-font-weight)] text-white text-[12px] md:text-[length:var(--body-syne-font-size)] tracking-[var(--body-syne-letter-spacing)] leading-[16px] md:leading-[var(--body-syne-line-height)] whitespace-nowrap hover:underline"
                   >
-                    {link}
+                    {link.name}
                   </a>
                 ))}
               </div>

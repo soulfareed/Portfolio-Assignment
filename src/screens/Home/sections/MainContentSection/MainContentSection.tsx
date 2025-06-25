@@ -1,28 +1,25 @@
 import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
+import Star from "../../../../assets/images/Star.png";
 
 export const MainContentSection = (): JSX.Element => {
   // Experience data for mapping
   const experiences = [
     {
-      position: "Lead Product Designer",
-      company: "Fortknox",
-      period: "Mar 2022 - Oct 2023",
+      position: "Full Stack Developer Intern",
+      company: "Metacyrus",
+      period: "Feb 2025 - May 2025",
     },
     {
-      position: "Intern Designer",
-      company: "OmniSafe",
-      period: "Mar 2022 - Oct 2023",
+      position: "Software Engineering Intern",
+      company: "Bluestock Fintech",
+      period: "Aug 2024 - Oct 2024",
     },
+
     {
-      position: "UI Designer",
-      company: "Doradesign",
-      period: "Mar 2022 - Oct 2023",
-    },
-    {
-      position: "Frontend Developer",
-      company: "OpacityAuthor",
-      period: "Mar 2022 - Oct 2023",
+      position: "Freelance Full Stack Developer",
+      company: "Truelancer",
+      period: "Jan 2022 - Dec 2024",
     },
   ];
 
@@ -30,7 +27,11 @@ export const MainContentSection = (): JSX.Element => {
     <section className="flex flex-col items-start px-4 md:px-6 lg:px-[100px] py-8 md:py-16 w-full">
       <div className="flex flex-col max-w-[1240px] items-center justify-end gap-6 md:gap-8 w-full mx-auto">
         <div className="flex items-center gap-2 relative self-stretch w-full">
-          <img className="w-6 h-6 md:w-[30.43px] md:h-8" alt="Star" src="/star.svg" />
+          <img
+            className="w-6 h-6 md:w-[30.43px] md:h-8"
+            alt="Star"
+            src={Star}
+          />
           <h3 className="w-fit mt-[-1.00px] font-heading-h3-bold font-[number:var(--heading-h3-bold-font-weight)] text-white text-[24px] md:text-[32px] lg:text-[length:var(--heading-h3-bold-font-size)] tracking-[var(--heading-h3-bold-letter-spacing)] leading-[30px] md:leading-[40px] lg:leading-[var(--heading-h3-bold-line-height)] [font-style:var(--heading-h3-bold-font-style)]">
             Experience
           </h3>

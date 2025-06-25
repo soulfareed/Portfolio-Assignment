@@ -5,6 +5,10 @@ import {
   AvatarImage,
 } from "../../../../components/ui/avatar";
 import { Card, CardContent } from "../../../../components/ui/card";
+import Star from "../../../../assets/images/Star.png";
+import Frame from "../../../../assets/images/Frame(1).png";
+import Frame2 from "../../../../assets/images/Frame(2).png";
+import quote from "../../../../assets/images/quote.png";
 
 export const TestimonialsSection = (): JSX.Element => {
   const testimonial = {
@@ -21,7 +25,7 @@ export const TestimonialsSection = (): JSX.Element => {
           <img
             className="relative w-6 h-6 md:w-[30.43px] md:h-8"
             alt="Star"
-            src="/star.svg"
+            src={Star}
           />
           <h3 className="relative w-fit mt-[-1.00px] font-heading-h3-bold font-[number:var(--heading-h3-bold-font-weight)] text-white text-[24px] md:text-[32px] lg:text-[length:var(--heading-h3-bold-font-size)] tracking-[var(--heading-h3-bold-letter-spacing)] leading-[30px] md:leading-[40px] lg:leading-[var(--heading-h3-bold-line-height)] [font-style:var(--heading-h3-bold-font-style)]">
             What they say
@@ -55,7 +59,7 @@ export const TestimonialsSection = (): JSX.Element => {
                 <img
                   className="absolute w-[70px] h-[50px] md:w-[102px] md:h-[85px] top-1 md:top-1.5 left-1 md:left-1.5"
                   alt="Quote mark"
-                  src="/group-3.png"
+                  src={quote}
                 />
               </div>
 
@@ -73,12 +77,12 @@ export const TestimonialsSection = (): JSX.Element => {
             <img
               className="relative w-[60px] h-[60px] md:w-[88px] md:h-[88px] mt-[-4px] md:mt-[-8.00px] mb-[-20px] md:mb-[-40.00px] ml-[-10px] md:ml-[-20.00px]"
               alt="Decorative element"
-              src="/frame-6.svg"
+              src={Frame}
             />
             <img
               className="relative w-[70px] h-[70px] md:w-[104px] md:h-[104px] mt-[-8px] md:mt-[-16.00px] mb-[-24px] md:mb-[-48.00px] mr-[-18px] md:mr-[-36.00px]"
               alt="Decorative element"
-              src="/frame-3.svg"
+              src={Frame2}
             />
           </div>
         </div>

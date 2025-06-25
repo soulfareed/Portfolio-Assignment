@@ -44,7 +44,7 @@ export const PortfolioSection = (): JSX.Element => {
             <img
               className="w-6 h-6 md:w-[30.43px] md:h-8"
               alt="Star"
-              src="/star.svg"
+              src={Star}
             />
             <h2 className="font-heading-h3-bold font-[number:var(--heading-h3-bold-font-weight)] text-white text-[24px] md:text-[32px] lg:text-[length:var(--heading-h3-bold-font-size)] tracking-[var(--heading-h3-bold-letter-spacing)] leading-[30px] md:leading-[40px] lg:leading-[var(--heading-h3-bold-line-height)] [font-style:var(--heading-h3-bold-font-style)]">
               Works

@@ -15,7 +15,7 @@ export const HeroSection = (): JSX.Element => {
     },
     { text: "FREELANCE", hasImage: false },
     {
-      text: "DESIGNER",
+      text: "DEVELOPER",
       hasImage: true,
       imageSrc: Rectangle,
       imageAlt: "Rectangle",
